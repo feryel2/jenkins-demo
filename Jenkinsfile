@@ -5,7 +5,7 @@ pipeline {
     }
     options {
         // Timeout counter starts after agent is allocated
-        timeout(time: 1, unit: 'SECONDS')
+        timeout(time: 10, unit: 'MINUTES') // au lieu de 1 seconde
     }
     environment {
         APP_ENV = "DEV"
